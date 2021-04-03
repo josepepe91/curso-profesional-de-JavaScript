@@ -48,11 +48,12 @@
       name = 'Juanito'
       accion(); // toma la acción saludar del objeto person, pero ahora está en el contexto global así que buscará name en este contexto
       // Output: Hola soy Juanito
+
       // this en el contexto de una "clase"
 
       // En JS no existen las clases como tal pero por practicidad se llama clase al siguiente tipo de funciones
       function Person(name) {
-        this.name = name;
+        this.name = name; // This se va a referir a la instancia del objeto portotipal Person
       }
 
       Person.prototype.saludar = function() {
@@ -60,6 +61,8 @@
       }
 
       const angela = new Person("Angela");
+
+      angela.saludar(); // Output: Me llamo Angela
     </script>
   </body>
 </html>
