@@ -21,12 +21,21 @@
         console.log(`Hola. Soy ${this.name} ${this.apellido}`);
       }
 
+<<<<<<< HEAD
       const jose = {
         name: 'José',
         apellido: 'Albarado Ortiz',
       };
 
       saludar.call(jose);
+=======
+      const richard = {
+        name: 'Richard',
+        apellido: 'Kaufman López',
+      };
+
+      saludar.call(richard);
+>>>>>>> 637b54ab5698f7a7363081707a38361f5421ed1e
 
       // Establece `this` usando `call` y pasar argumentos a la función
       function caminar(metros, direccion) {
@@ -47,8 +56,13 @@
       // Establecer `this` en una nueva función usando `bind`
       // bind no llama a la función directamente, sino que construye una nueva función
 
+<<<<<<< HEAD
       const pepe = { name: 'Pepe', apellido: 'Albarado' };
       const pepeSaluda = saludar.bind(daniel);
+=======
+      const daniel = { name: 'Daniel', apellido: 'Sánchez' };
+      const danielSaluda = saludar.bind(daniel);
+>>>>>>> 637b54ab5698f7a7363081707a38361f5421ed1e
       danielSaluda();
 
       // Loas argumentos se pueden harcodear, todo lo mostrado a continuación es válido
@@ -68,7 +82,11 @@
       //   button.onclick = () => alert('Nunca pares de aprender!');
       // });
 
+<<<<<<< HEAD
       // NodeList no es un  Array así que usaremos call para añadir funcionalidades ya que solo basta que buttons(NodeList) tenga length para usar forEach
+=======
+      // NodeList
+>>>>>>> 637b54ab5698f7a7363081707a38361f5421ed1e
       Array.prototype.forEach.call(buttons, button => {
         button.onclick = () => alert('Nunca pares de aprender!');
       });
